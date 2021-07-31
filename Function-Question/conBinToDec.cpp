@@ -20,7 +20,7 @@ int convertBintoDec(int num){
     return ans;
 }
 
-
+//main function
 int main(){
 
     int num;cin>>num;
