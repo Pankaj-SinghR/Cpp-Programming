@@ -6,21 +6,26 @@
 
 using namespace std;
 
-int main(){
-
-    int num;cin>>num;
+int convertBintoDec(int num){
     int r;
     int ans=0;
     int p=0;
     while(num!=0){
-        r=r%10;
+        r=num%10;
         num=num/10;
         ans+=r*pow(2,p);
-        cout<<ans<<endl;
         p++;
     }
+    
+    return ans;
+}
 
-    cout<<ans<<endl;
+
+int main(){
+
+    int num;cin>>num;
+
+    cout<<"Decimal of "<< num <<" is"<<convertBintoDec(num);
 
     return 0;
 }
